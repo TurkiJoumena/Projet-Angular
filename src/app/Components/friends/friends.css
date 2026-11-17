@@ -1,0 +1,52 @@
+
+.friends-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px;
+  margin: 15px;
+
+  background-color: white;
+  border-left: 4px solid #22ad76;
+  border-radius: 15px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.friends-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e6f7ef;
+  border-radius: 50%;
+  font-size: 28px;
+}
+
+.friends-content {
+  flex: 1;
+}
+
+.friends-content h2 {
+  color: #24476b;
+  margin-top: 0;
+}
+
+.friends-inputs {
+  display: flex;
+  gap: 5px;
+}
+
+.friends-inputs input {
+  width: 180px;
+  padding: 4px;
+}
+
+.friends-content ul {
+  margin-top: 15px;
+}

@@ -1,0 +1,27 @@
+<div class="notification-card">
+
+  <div class="notification-icon">
+    🔔
+  </div>
+
+  <div class="notification-content">
+    <h3>Zone de notifications</h3>
+
+    <p>Vous avez {{ notificationsList.length }} nouvelles notifications.</p>
+
+    <button (click)="ShowNotifications()">
+      {{ btnText }}
+    </button>
+
+    @if (show) {
+      <div class="notification-list">
+        <ul>
+          @for (item of notificationsList; track $index) {
+            <li>{{ item.message }}</li>
+          }
+        </ul>
+      </div>
+    }
+
+  </div>
+</div>

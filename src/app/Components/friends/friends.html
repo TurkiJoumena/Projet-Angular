@@ -1,0 +1,29 @@
+
+<div class="friends-card">
+
+  <div class="friends-icon">
+    👥
+  </div>
+
+  <div class="friends-content">
+
+    <h2>Liste des amis</h2>
+
+    <div class="friends-inputs">
+      @for (friend of friendsList; track $index) {
+        <input
+          type="text"
+          [(ngModel)]="friend.name"
+        />
+      }
+    </div>
+
+    <ul>
+      @for (friend of friendsList; track $index) {
+        <li>{{ friend.name }}</li>
+      }
+    </ul>
+
+  </div>
+
+</div>
